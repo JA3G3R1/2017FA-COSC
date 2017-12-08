@@ -52,6 +52,12 @@
     <Compile Include="AdminAuthenticator.Designer.cs">
       <DependentUpon>AdminAuthenticator.cs</DependentUpon>
     </Compile>
+    <Compile Include="EventAdminView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EventAdminView.Designer.cs">
+      <DependentUpon>EventAdminView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +74,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AdminAuthenticator.resx">
       <DependentUpon>AdminAuthenticator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EventAdminView.resx">
+      <DependentUpon>EventAdminView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

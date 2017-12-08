@@ -30,7 +30,7 @@
         {
             this.lblHeader = new System.Windows.Forms.Label();
             this.lblPassword = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtpw = new System.Windows.Forms.TextBox();
             this.btnRegister = new System.Windows.Forms.Button();
             this.btnGuest = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -55,13 +55,13 @@
             this.lblPassword.TabIndex = 1;
             this.lblPassword.Text = "Password:";
             // 
-            // textBox1
+            // txtpw
             // 
-            this.textBox1.Location = new System.Drawing.Point(115, 62);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.PasswordChar = '*';
-            this.textBox1.Size = new System.Drawing.Size(180, 20);
-            this.textBox1.TabIndex = 2;
+            this.txtpw.Location = new System.Drawing.Point(115, 62);
+            this.txtpw.Name = "txtpw";
+            this.txtpw.PasswordChar = '*';
+            this.txtpw.Size = new System.Drawing.Size(180, 20);
+            this.txtpw.TabIndex = 2;
             // 
             // btnRegister
             // 
@@ -72,6 +72,7 @@
             this.btnRegister.TabIndex = 3;
             this.btnRegister.Text = "Submit";
             this.btnRegister.UseVisualStyleBackColor = true;
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // btnGuest
             // 
@@ -91,7 +92,7 @@
             this.ClientSize = new System.Drawing.Size(314, 149);
             this.Controls.Add(this.btnGuest);
             this.Controls.Add(this.btnRegister);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtpw);
             this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.lblHeader);
             this.Name = "AdminAuthenticator";
@@ -105,7 +106,7 @@
 
         private System.Windows.Forms.Label lblHeader;
         private System.Windows.Forms.Label lblPassword;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtpw;
         private System.Windows.Forms.Button btnRegister;
         private System.Windows.Forms.Button btnGuest;
     }
