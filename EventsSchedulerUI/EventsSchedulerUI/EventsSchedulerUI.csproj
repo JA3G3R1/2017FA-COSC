@@ -46,16 +46,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminAuthenticator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminAuthenticator.Designer.cs">
+      <DependentUpon>AdminAuthenticator.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="ParticpantView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ParticpantView.Designer.cs">
+      <DependentUpon>ParticpantView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AdminAuthenticator.resx">
+      <DependentUpon>AdminAuthenticator.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParticpantView.resx">
+      <DependentUpon>ParticpantView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

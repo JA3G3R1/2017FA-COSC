@@ -63,6 +63,7 @@
             this.btnAdmin.TabIndex = 2;
             this.btnAdmin.Text = "Event Administrator";
             this.btnAdmin.UseVisualStyleBackColor = true;
+            this.btnAdmin.Click += new System.EventHandler(this.btnAdmin_Click);
             // 
             // btnUser
             // 
@@ -73,6 +74,7 @@
             this.btnUser.TabIndex = 3;
             this.btnUser.Text = "Participant";
             this.btnUser.UseVisualStyleBackColor = true;
+            this.btnUser.Click += new System.EventHandler(this.btnUser_Click);
             // 
             // Login
             // 
