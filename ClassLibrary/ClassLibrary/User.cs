@@ -16,5 +16,6 @@ namespace ClassLibrary
         public string LastName { get; set; }
 
         public string FirstName { get; set; }
+        // This is a teest push message tovarish
     }
 }
