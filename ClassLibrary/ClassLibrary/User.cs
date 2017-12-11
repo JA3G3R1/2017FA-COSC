@@ -10,36 +10,11 @@ namespace ClassLibrary
 {
     public class User
     {
-        public int Age
-        {
-            get => default(int);
-            set
-            {
-            }
-        }
+        public int Age { get; set; }
+        public int ID { get; set; }
 
-        public int ID
-        {
-            get => default(int);
-            set
-            {
-            }
-        }
+        public string LastName { get; set; }
 
-        public string LastName
-        {
-            get => default(int);
-            set
-            {
-            }
-        }
-
-        public string FirstName
-        {
-            get => default(int);
-            set
-            {
-            }
-        }
+        public string FirstName { get; set; }
     }
 }
