@@ -3,17 +3,10 @@
   <Comment CommentText="CW:&#xD;&#xA;Moved Create, Update, and Delete to admin.&#xD;&#xA;Moved Register to Participant. &#xD;&#xA;Changed 'Place' to Location.">
     <Position X="7.682" Y="2.146" Height="1.476" Width="1.7" />
   </Comment>
-  <Class Name="ClassLibrary.Calander">
-    <Position X="1.25" Y="0.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
-      <FileName>Calander.cs</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="ClassLibrary.Event">
     <Position X="1.25" Y="2.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAEAAAAAAAAAAAAAAACAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAEAAAAAAAAAAAAAAACAAAAAAABAQAAAAAAAAA=</HashCode>
       <FileName>Event.cs</FileName>
     </TypeIdentifier>
   </Class>

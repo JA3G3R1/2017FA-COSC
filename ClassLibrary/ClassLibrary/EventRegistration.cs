@@ -12,7 +12,7 @@ namespace ClassLibrary
     {
         public void IsEnrolled()
         {
-            throw new System.NotImplementedException();
+
         }
     }
 }

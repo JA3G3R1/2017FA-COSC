@@ -12,7 +12,7 @@ namespace ClassLibrary
     {
         public void RegisterEvent()
         {
-            throw new System.NotImplementedException();
+
         }
     }
 }

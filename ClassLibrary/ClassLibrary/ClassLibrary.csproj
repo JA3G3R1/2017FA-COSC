@@ -40,7 +40,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Calander.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="Event.cs" />
     <Compile Include="EventAdmin.cs" />

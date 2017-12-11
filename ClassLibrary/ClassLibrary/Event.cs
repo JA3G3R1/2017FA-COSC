@@ -8,30 +8,14 @@ using System.Data.Sql;
 
 namespace ClassLibrary
 {
-    public class Event : Calander
+    public class Event
     {
-        public int Capacity
-        {
-            get => default(int);
-            set
-            {
-            }
-        }
+        public int Capacity { get; set; }
 
-        public bool Status
-        {
-            get => default(int);
-            set
-            {
-            }
-        }
+        public bool Status { get; set; }
 
-        public string Type
-        {
-            get => default(int);
-            set
-            {
-            }
-        }
+        public string Type { get; set; }
+
+        public int Date { get; set; }
     }
 }

@@ -12,17 +12,17 @@ namespace ClassLibrary
     {
         public void CreateEvent()
         {
-            throw new System.NotImplementedException();
+
         }
 
         public void UpdateEvent()
         {
-            throw new System.NotImplementedException();
+
         }
 
         public void DeleteEvent()
         {
-            throw new System.NotImplementedException();
+
         }
     }
 }
