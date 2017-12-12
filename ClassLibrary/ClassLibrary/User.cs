@@ -12,12 +12,34 @@ namespace ClassLibrary
     {
         // CW: I plan on using an array to take the data from the Psrticipants table and store it into the 
         // user Age,ID,LastName,Firstname
+        
         public int Age { get; set; }
         public int ID { get; set; }
 
         public string LastName { get; set; }
 
         public string FirstName { get; set; }
-        // This is a teest push message tovarish
+
+        // use a method to add the information from the database.
+        public void ReadData()
+        {
+            // Create a working connection to the database.
+            SqlConnection connection = new SqlConnection();
+            connection.ConnectionString = "Server=cis1.actx.edu;Database=project2;User Id=db2;Password = db20;";
+            connection.Open();
+
+            // Create a sql command
+            SqlCommand readPaticipants = new SqlCommand("select * from Participants");
+            SqlDataReader reader = readPaticipants.ExecuteReader(); 
+
+            // Create a list object to hold the data
+            List<Participant> participants = new List<Participant>();
+
+            while (reader.Read())
+            {
+                Participant p = new Participant();
+            }
+
+        }
     }
 }
