@@ -37,7 +37,12 @@ namespace ClassLibrary
 
             while (reader.Read())
             {
-                Participant p = new Participant();
+               // We can instantiate a Participant object in the participants class
+               // Participant p = new Participant();
+                ID = (Int32) reader["UserID"];
+                FirstName = (string) reader["FirstName"];
+                LastName = (string)reader["LastName"];
+                Age = (Int32)reader["Age"]; 
             }
 
         }

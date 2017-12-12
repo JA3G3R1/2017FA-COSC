@@ -10,6 +10,7 @@ namespace ClassLibrary
 {
     public class Participant : UserType
     {
+
         public void RegisterEvent()
         {
 

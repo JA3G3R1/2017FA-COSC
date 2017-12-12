@@ -32,9 +32,9 @@
     </TypeIdentifier>
   </Class>
   <Class Name="ClassLibrary.User">
-    <Position X="5.75" Y="0.75" Width="1.5" />
+    <Position X="5.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAEAAAAAAgAAAAEAAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <HashCode>AAAAAEAAAAABgAAAAEAAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
       <FileName>User.cs</FileName>
     </TypeIdentifier>
   </Class>
