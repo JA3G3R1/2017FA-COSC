@@ -21,6 +21,7 @@ namespace ClassLibrary
         public string FirstName { get; set; }
 
         // use a method to add the information from the database.
+        // This method will pull all last names and store them in a list object
         public List<string> ReadAllFirstNames()
         {
             SqlConnection connection = new SqlConnection();
@@ -33,19 +34,28 @@ namespace ClassLibrary
             List<string> Result = new List<string>();
             while (reader.Read())
             {
-                // We can instantiate a Participant object in the participants class
-                // Participant p = new Participant();
-                //ID = (Int32)reader["UserID"];
-                //FirstName = (string)reader["FirstName"];
-                //LastName = (string)reader["LastName"];
-                //Age = (Int32)reader["Age"];
-                Result.Add((string)reader["FirstName"]);
-               
+                Result.Add((string)reader["FirstName"]);            
             }
             return Result;
-
-
         }
+        // This method will pull all last names and store them in a list object
+        public List<string> ReadAllLastNames()
+        {
+            SqlConnection connection = new SqlConnection();
+            connection.ConnectionString = "Server=cis1.actx.edu;Database=project2;User Id=db2;Password = db20;";
+            connection.Open();
+
+            SqlCommand readParticipant = connection.CreateCommand();
+            readParticipant.CommandText = "select LastName from Participant";
+            SqlDataReader reader = readParticipant.ExecuteReader();
+            List<string> Result = new List<string>();
+            while (reader.Read())
+            {
+                Result.Add((string)reader["LastName"]);
+            }
+            return Result;
+        }
+
         public void ReadData()
         {
             // Create a working connection to the database.
