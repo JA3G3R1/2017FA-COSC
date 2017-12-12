@@ -35,7 +35,7 @@
             this.btnRegister = new System.Windows.Forms.Button();
             this.lblAgeNote = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cmb2 = new System.Windows.Forms.ComboBox();
             this.btnAdmin = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -106,14 +106,14 @@
             this.label1.TabIndex = 12;
             this.label1.Text = "Please select you\'re name";
             // 
-            // comboBox2
+            // cmb2
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(210, 92);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(205, 21);
-            this.comboBox2.TabIndex = 13;
-            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+            this.cmb2.FormattingEnabled = true;
+            this.cmb2.Location = new System.Drawing.Point(210, 92);
+            this.cmb2.Name = "cmb2";
+            this.cmb2.Size = new System.Drawing.Size(205, 21);
+            this.cmb2.TabIndex = 13;
+            this.cmb2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // btnAdmin
             // 
@@ -132,7 +132,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(594, 226);
             this.Controls.Add(this.btnAdmin);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.cmb2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblAgeNote);
             this.Controls.Add(this.btnRegister);
@@ -155,7 +155,7 @@
         private System.Windows.Forms.Button btnRegister;
         private System.Windows.Forms.Label lblAgeNote;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cmb2;
         private System.Windows.Forms.Button btnAdmin;
     }
 }
