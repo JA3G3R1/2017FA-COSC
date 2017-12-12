@@ -17,5 +17,19 @@ namespace ClassLibrary
         public string Type { get; set; }
 
         public int Date { get; set; }
+
+        ReadAllEvents()
+        {
+
+        }
+        ReadAllEventsWithCategories()
+        {
+            // Select * from Event (as) e, Catagory (as) c where c.CategoryID = e.CategoryID
+            
+        }
+        ReadAllCategories()
+        {
+
+        }
     }
 }
