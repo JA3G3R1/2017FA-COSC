@@ -18,7 +18,9 @@ namespace EventsSchedulerUI
         public ParticpantView()
         {
             InitializeComponent();
-            cmb2.Items.Add(P.FirstName);
+            P.ReadData();
+            cmb2.Items.AddRange(P.ReadAllFirstNames().ToArray());
+
         }
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)

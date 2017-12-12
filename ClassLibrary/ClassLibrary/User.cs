@@ -21,6 +21,31 @@ namespace ClassLibrary
         public string FirstName { get; set; }
 
         // use a method to add the information from the database.
+        public List<string> ReadAllFirstNames()
+        {
+            SqlConnection connection = new SqlConnection();
+            connection.ConnectionString = "Server=cis1.actx.edu;Database=project2;User Id=db2;Password = db20;";
+            connection.Open();
+
+            SqlCommand readParticipant = connection.CreateCommand();
+            readParticipant.CommandText = "select FirstName from Participant";
+            SqlDataReader reader = readParticipant.ExecuteReader();
+            List<string> Result = new List<string>();
+            while (reader.Read())
+            {
+                // We can instantiate a Participant object in the participants class
+                // Participant p = new Participant();
+                //ID = (Int32)reader["UserID"];
+                //FirstName = (string)reader["FirstName"];
+                //LastName = (string)reader["LastName"];
+                //Age = (Int32)reader["Age"];
+                Result.Add((string)reader["FirstName"]);
+               
+            }
+            return Result;
+
+
+        }
         public void ReadData()
         {
             // Create a working connection to the database.
@@ -29,8 +54,12 @@ namespace ClassLibrary
             connection.Open();
 
             // Create a sql command
-            SqlCommand readPaticipants = new SqlCommand("select * from Participants");
-            SqlDataReader reader = readPaticipants.ExecuteReader(); 
+            // SqlCommand readParticipants = new SqlCommand("select * from Participants");
+
+            SqlCommand readParticipant = connection.CreateCommand();
+            readParticipant.CommandText = "select * from Participant where UserID = 1001";
+            SqlDataReader reader = readParticipant.ExecuteReader(); 
+
 
             // Create a list object to hold the data
             // List<Participant> participants = new List<Participant>();

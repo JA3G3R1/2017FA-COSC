@@ -12,7 +12,7 @@ namespace ClassLibrary
     {
         // This is a test
         List<Participant> participants = new List<Participant>();
-        Participant p = new Participant();
+        //Participant p = new Participant();
         
 
 
