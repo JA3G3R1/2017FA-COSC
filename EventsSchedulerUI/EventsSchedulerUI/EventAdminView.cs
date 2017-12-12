@@ -40,5 +40,10 @@ namespace EventsSchedulerUI
             openInstance.ShowDialog();
             Environment.Exit(0);
         }
+
+        private void dataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
