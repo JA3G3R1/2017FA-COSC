@@ -21,6 +21,7 @@ namespace ClassLibrary
         public string FirstName { get; set; }
 
         // use a method to add the information from the database.
+        // This method will pull all last names and store them in a list object
         public List<string> ReadAllFirstNames()
         {
             SqlConnection connection = new SqlConnection();
@@ -37,6 +38,7 @@ namespace ClassLibrary
             }
             return Result;
         }
+        // This method will pull all last names and store them in a list object
         public List<string> ReadAllLastNames()
         {
             SqlConnection connection = new SqlConnection();
