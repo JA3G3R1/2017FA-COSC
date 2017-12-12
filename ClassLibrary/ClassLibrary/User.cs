@@ -33,7 +33,7 @@ namespace ClassLibrary
             SqlDataReader reader = readPaticipants.ExecuteReader(); 
 
             // Create a list object to hold the data
-            List<Participant> participants = new List<Participant>();
+            // List<Participant> participants = new List<Participant>();
 
             while (reader.Read())
             {

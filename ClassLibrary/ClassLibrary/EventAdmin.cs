@@ -8,7 +8,7 @@ using System.Data.Sql;
 
 namespace ClassLibrary
 {
-    public class EventAdmin : UserType
+    public class EventAdmin : User
     {
         public void CreateEvent()
         {
