@@ -10,22 +10,18 @@ using System.Windows.Forms;
 
 namespace EventsSchedulerUI
 {
-    public partial class ParticpantView : Form
+    public partial class CreateEvent : Form
     {
-        public ParticpantView()
+        public CreateEvent()
         {
             InitializeComponent();
         }
 
-        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnAdmin_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            AdminAuthenticator openInstance = new AdminAuthenticator();
+            EventAdminView openinstance = new EventAdminView();
+            openinstance.ShowDialog();
             Environment.Exit(0);
         }
     }

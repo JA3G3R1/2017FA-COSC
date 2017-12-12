@@ -10,29 +10,25 @@ using System.Windows.Forms;
 
 namespace EventsSchedulerUI
 {
-    public partial class Login : Form
+    public partial class DeleteEvent : Form
     {
-        public Login()
+        public DeleteEvent()
         {
             InitializeComponent();
         }
 
-        private void btnAdmin_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            // Opens the admin authenticator and has the admin sign in.
-            // Also closes the previous windows form.
-            // - MW
             this.Hide();
-            AdminAuthenticator openInstance = new AdminAuthenticator();
+            DeleteConfirmBox openInstance = new DeleteConfirmBox();
             openInstance.ShowDialog();
             Environment.Exit(0);
         }
 
-        private void btnUser_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-            // Opens the participants registration form. 
             this.Hide();
-            ParticpantView openInstance = new ParticpantView();
+            EventAdminView openInstance = new EventAdminView();
             openInstance.ShowDialog();
             Environment.Exit(0);
         }

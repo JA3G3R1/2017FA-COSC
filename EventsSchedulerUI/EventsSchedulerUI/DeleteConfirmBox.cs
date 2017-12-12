@@ -10,22 +10,18 @@ using System.Windows.Forms;
 
 namespace EventsSchedulerUI
 {
-    public partial class ParticpantView : Form
+    public partial class DeleteConfirmBox : Form
     {
-        public ParticpantView()
+        public DeleteConfirmBox()
         {
             InitializeComponent();
         }
 
-        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnAdmin_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            AdminAuthenticator openInstance = new AdminAuthenticator();
+            DeleteEvent openInstance = new DeleteEvent();
+            openInstance.ShowDialog();
             Environment.Exit(0);
         }
     }

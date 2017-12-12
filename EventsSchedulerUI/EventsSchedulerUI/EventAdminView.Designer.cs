@@ -36,7 +36,25 @@
             this.btnUpdateEvent = new System.Windows.Forms.Button();
             this.btnDeleteEvent = new System.Windows.Forms.Button();
             this.btnRegisterRequest = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.dataGridView4 = new System.Windows.Forms.DataGridView();
+            this.dataGridView5 = new System.Windows.Forms.DataGridView();
+            this.dataGridView6 = new System.Windows.Forms.DataGridView();
+            this.dataGridView7 = new System.Windows.Forms.DataGridView();
+            this.dataGridView8 = new System.Windows.Forms.DataGridView();
             this.tbView.SuspendLayout();
+            this.tbList.SuspendLayout();
+            this.tbTeaser.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView8)).BeginInit();
             this.SuspendLayout();
             // 
             // monthCalendar1
@@ -54,25 +72,33 @@
             this.tbView.Location = new System.Drawing.Point(257, 18);
             this.tbView.Name = "tbView";
             this.tbView.SelectedIndex = 0;
-            this.tbView.Size = new System.Drawing.Size(624, 587);
+            this.tbView.Size = new System.Drawing.Size(624, 435);
             this.tbView.TabIndex = 1;
             // 
             // tbList
             // 
-            this.tbList.Location = new System.Drawing.Point(4, 22);
+            this.tbList.Controls.Add(this.dataGridView1);
+            this.tbList.Location = new System.Drawing.Point(4, 27);
             this.tbList.Name = "tbList";
             this.tbList.Padding = new System.Windows.Forms.Padding(3);
-            this.tbList.Size = new System.Drawing.Size(616, 561);
+            this.tbList.Size = new System.Drawing.Size(616, 404);
             this.tbList.TabIndex = 0;
             this.tbList.Text = "List View";
             this.tbList.UseVisualStyleBackColor = true;
             // 
             // tbTeaser
             // 
+            this.tbTeaser.Controls.Add(this.dataGridView8);
+            this.tbTeaser.Controls.Add(this.dataGridView7);
+            this.tbTeaser.Controls.Add(this.dataGridView6);
+            this.tbTeaser.Controls.Add(this.dataGridView5);
+            this.tbTeaser.Controls.Add(this.dataGridView4);
+            this.tbTeaser.Controls.Add(this.dataGridView3);
+            this.tbTeaser.Controls.Add(this.dataGridView2);
             this.tbTeaser.Location = new System.Drawing.Point(4, 27);
             this.tbTeaser.Name = "tbTeaser";
             this.tbTeaser.Padding = new System.Windows.Forms.Padding(3);
-            this.tbTeaser.Size = new System.Drawing.Size(616, 556);
+            this.tbTeaser.Size = new System.Drawing.Size(616, 404);
             this.tbTeaser.TabIndex = 1;
             this.tbTeaser.Text = "Teaser";
             this.tbTeaser.UseVisualStyleBackColor = true;
@@ -86,6 +112,7 @@
             this.btnCreateEvent.TabIndex = 2;
             this.btnCreateEvent.Text = "Create Event";
             this.btnCreateEvent.UseVisualStyleBackColor = true;
+            this.btnCreateEvent.Click += new System.EventHandler(this.btnCreateEvent_Click);
             // 
             // btnUpdateEvent
             // 
@@ -96,6 +123,7 @@
             this.btnUpdateEvent.TabIndex = 3;
             this.btnUpdateEvent.Text = "Update Event";
             this.btnUpdateEvent.UseVisualStyleBackColor = true;
+            this.btnUpdateEvent.Click += new System.EventHandler(this.btnUpdateEvent_Click);
             // 
             // btnDeleteEvent
             // 
@@ -106,6 +134,7 @@
             this.btnDeleteEvent.TabIndex = 4;
             this.btnDeleteEvent.Text = "Delete Event";
             this.btnDeleteEvent.UseVisualStyleBackColor = true;
+            this.btnDeleteEvent.Click += new System.EventHandler(this.btnDeleteEvent_Click);
             // 
             // btnRegisterRequest
             // 
@@ -117,11 +146,75 @@
             this.btnRegisterRequest.Text = "Registrar";
             this.btnRegisterRequest.UseVisualStyleBackColor = true;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(7, 7);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(603, 391);
+            this.dataGridView1.TabIndex = 0;
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(7, 7);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(603, 50);
+            this.dataGridView2.TabIndex = 0;
+            // 
+            // dataGridView3
+            // 
+            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.Location = new System.Drawing.Point(7, 63);
+            this.dataGridView3.Name = "dataGridView3";
+            this.dataGridView3.Size = new System.Drawing.Size(603, 50);
+            this.dataGridView3.TabIndex = 1;
+            // 
+            // dataGridView4
+            // 
+            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView4.Location = new System.Drawing.Point(7, 119);
+            this.dataGridView4.Name = "dataGridView4";
+            this.dataGridView4.Size = new System.Drawing.Size(603, 50);
+            this.dataGridView4.TabIndex = 2;
+            // 
+            // dataGridView5
+            // 
+            this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView5.Location = new System.Drawing.Point(7, 175);
+            this.dataGridView5.Name = "dataGridView5";
+            this.dataGridView5.Size = new System.Drawing.Size(603, 50);
+            this.dataGridView5.TabIndex = 3;
+            // 
+            // dataGridView6
+            // 
+            this.dataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView6.Location = new System.Drawing.Point(7, 231);
+            this.dataGridView6.Name = "dataGridView6";
+            this.dataGridView6.Size = new System.Drawing.Size(603, 50);
+            this.dataGridView6.TabIndex = 4;
+            // 
+            // dataGridView7
+            // 
+            this.dataGridView7.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView7.Location = new System.Drawing.Point(7, 287);
+            this.dataGridView7.Name = "dataGridView7";
+            this.dataGridView7.Size = new System.Drawing.Size(603, 50);
+            this.dataGridView7.TabIndex = 5;
+            // 
+            // dataGridView8
+            // 
+            this.dataGridView8.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView8.Location = new System.Drawing.Point(7, 343);
+            this.dataGridView8.Name = "dataGridView8";
+            this.dataGridView8.Size = new System.Drawing.Size(603, 50);
+            this.dataGridView8.TabIndex = 6;
+            // 
             // EventAdminView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(893, 617);
+            this.ClientSize = new System.Drawing.Size(893, 462);
             this.Controls.Add(this.btnRegisterRequest);
             this.Controls.Add(this.btnDeleteEvent);
             this.Controls.Add(this.btnUpdateEvent);
@@ -131,6 +224,16 @@
             this.Name = "EventAdminView";
             this.Text = "Event Administrator";
             this.tbView.ResumeLayout(false);
+            this.tbList.ResumeLayout(false);
+            this.tbTeaser.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView8)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -145,5 +248,13 @@
         private System.Windows.Forms.Button btnUpdateEvent;
         private System.Windows.Forms.Button btnDeleteEvent;
         private System.Windows.Forms.Button btnRegisterRequest;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridView8;
+        private System.Windows.Forms.DataGridView dataGridView7;
+        private System.Windows.Forms.DataGridView dataGridView6;
+        private System.Windows.Forms.DataGridView dataGridView5;
+        private System.Windows.Forms.DataGridView dataGridView4;
+        private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.DataGridView dataGridView2;
     }
 }

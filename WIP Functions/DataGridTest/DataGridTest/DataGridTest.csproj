@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{53F1A0A9-00E8-48B7-8057-A8EB8D067B02}</ProjectGuid>
+    <ProjectGuid>{852568E1-9707-4DFC-97A7-C903973F3582}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>EventsSchedulerUI</RootNamespace>
-    <AssemblyName>EventsSchedulerUI</AssemblyName>
+    <RootNamespace>DataGridTest</RootNamespace>
+    <AssemblyName>DataGridTest</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,77 +46,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdminAuthenticator.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AdminAuthenticator.Designer.cs">
-      <DependentUpon>AdminAuthenticator.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CreateEvent.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CreateEvent.Designer.cs">
-      <DependentUpon>CreateEvent.cs</DependentUpon>
-    </Compile>
-    <Compile Include="DeleteConfirmBox.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DeleteConfirmBox.Designer.cs">
-      <DependentUpon>DeleteConfirmBox.cs</DependentUpon>
-    </Compile>
-    <Compile Include="DeleteEvent.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DeleteEvent.Designer.cs">
-      <DependentUpon>DeleteEvent.cs</DependentUpon>
-    </Compile>
-    <Compile Include="EventAdminView.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="EventAdminView.Designer.cs">
-      <DependentUpon>EventAdminView.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="ParticpantView.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ParticpantView.Designer.cs">
-      <DependentUpon>ParticpantView.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UpdateEvent.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UpdateEvent.Designer.cs">
-      <DependentUpon>UpdateEvent.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="AdminAuthenticator.resx">
-      <DependentUpon>AdminAuthenticator.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CreateEvent.resx">
-      <DependentUpon>CreateEvent.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DeleteConfirmBox.resx">
-      <DependentUpon>DeleteConfirmBox.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DeleteEvent.resx">
-      <DependentUpon>DeleteEvent.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EventAdminView.resx">
-      <DependentUpon>EventAdminView.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ParticpantView.resx">
-      <DependentUpon>ParticpantView.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -126,9 +63,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="UpdateEvent.resx">
-      <DependentUpon>UpdateEvent.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -66,7 +66,7 @@
             // btnRegister
             // 
             this.btnRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegister.Location = new System.Drawing.Point(220, 89);
+            this.btnRegister.Location = new System.Drawing.Point(220, 106);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(75, 31);
             this.btnRegister.TabIndex = 3;
@@ -77,7 +77,7 @@
             // btnGuest
             // 
             this.btnGuest.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuest.Location = new System.Drawing.Point(12, 89);
+            this.btnGuest.Location = new System.Drawing.Point(12, 106);
             this.btnGuest.Name = "btnGuest";
             this.btnGuest.Size = new System.Drawing.Size(124, 31);
             this.btnGuest.TabIndex = 4;

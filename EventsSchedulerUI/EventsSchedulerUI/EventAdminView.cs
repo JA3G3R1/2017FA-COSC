@@ -16,5 +16,29 @@ namespace EventsSchedulerUI
         {
             InitializeComponent();
         }
+
+        private void btnCreateEvent_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            CreateEvent openInstance = new CreateEvent();
+            openInstance.ShowDialog();
+            Environment.Exit(0);
+        }
+
+        private void btnUpdateEvent_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            UpdateEvent openInstance = new UpdateEvent();
+            openInstance.ShowDialog();
+            Environment.Exit(0);
+        }
+
+        private void btnDeleteEvent_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            DeleteEvent openInstance = new DeleteEvent();
+            openInstance.ShowDialog();
+            Environment.Exit(0);
+        }
     }
 }
