@@ -36,29 +36,12 @@ namespace ClassLibrary
             {
                 Capacity = (Int32)reader["Capacity"];
                 Status = (Boolean)reader["Status"];
-                // type will have to pull from a seperate table on the database
+                Type = (string)reader["Category"];
                 Date = (string)reader["Date"];           
 
             }
         }
 
-        // this will pull the type of event from the cateogry table in the database 
-        public List<string> ReadEventType()
-        {
-            SqlConnection connection = new SqlConnection();
-            connection.ConnectionString = "Server=cis1.actx.edu;Database=project2;User Id=db2;Password = db20;";
-            connection.Open();
-
-            SqlCommand readParticipant = connection.CreateCommand();
-            readParticipant.CommandText = "select CategpryType from Category";
-            SqlDataReader reader = readParticipant.ExecuteReader();
-            List<string> Result = new List<string>();
-            while (reader.Read())
-            {
-                Result.Add((string)reader["CategoryType"]);
-            }
-            return Result;
-        }
 
         //CW: this will pull all dates for use in UI
         public List<string> ReadEventDate()

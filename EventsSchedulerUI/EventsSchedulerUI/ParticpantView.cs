@@ -19,7 +19,7 @@ namespace EventsSchedulerUI
         {
             InitializeComponent();
             P.ReadData();
-            cmb2.Items.AddRange(P.ReadAllFirstNames().ToArray());
+            cmb2.Items.AddRange(P.ReadAllFirstNames().ToArray() + ", " P.ReadAllLastNames());
 
         }
 
