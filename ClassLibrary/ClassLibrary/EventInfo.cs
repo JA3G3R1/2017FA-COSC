@@ -39,7 +39,7 @@ namespace ClassLibrary
         }
 
         // CW: This method will pull all the event titles for use in the UI
-        public List<string> ReadAllEventTitles()
+        public List<string> ReadAllEventTitle()
         {
             SqlConnection connection = new SqlConnection();
             connection.ConnectionString = "Server=cis1.actx.edu;Database=project2;User Id=db2;Password = db20;";
@@ -52,6 +52,24 @@ namespace ClassLibrary
             while (reader.Read())
             {
                 Result.Add((string)reader["EventName"]);
+            }
+            return Result;
+        }
+
+        //CW: This method will pull all the event locations for use in UI
+        public List<string> ReadAllEventLocation()
+        {
+            SqlConnection connection = new SqlConnection();
+            connection.ConnectionString = "Server=cis1.actx.edu;Database=project2;User Id=db2;Password = db20;";
+            connection.Open();
+
+            SqlCommand readParticipant = connection.CreateCommand();
+            readParticipant.CommandText = "select Location from Event";
+            SqlDataReader reader = readParticipant.ExecuteReader();
+            List<string> Result = new List<string>();
+            while (reader.Read())
+            {
+                Result.Add((string)reader["Location"]);
             }
             return Result;
         }
