@@ -14,7 +14,7 @@ namespace EventsSchedulerUI
     public partial class UpdateEvent : Form
     {
         //reading all the events 
-        EventInfo EI = new EventInfo();
+        EventInfo EI = new EventInfo(" ", " ", " ");
         public UpdateEvent()
         {
             InitializeComponent();

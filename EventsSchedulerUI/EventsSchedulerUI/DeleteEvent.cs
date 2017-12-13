@@ -13,7 +13,7 @@ namespace EventsSchedulerUI
 {
     public partial class DeleteEvent : Form
     {
-        EventInfo EI = new EventInfo();
+        EventInfo EI = new EventInfo(" ", " ", " ");
         public DeleteEvent()
         {
             InitializeComponent();
