@@ -16,7 +16,7 @@ namespace ClassLibrary
 
         public string Type { get; set; }
 
-        public DateTime Date { get; set; }
+        public string Date { get; set; }
 
 
         public void ReadEventData()
@@ -37,7 +37,7 @@ namespace ClassLibrary
                 Capacity = (Int32)reader["Capacity"];
                 Status = (Boolean)reader["Status"];
                 // type will have to pull from a seperate table on the database
-                Date = (DateTime)reader["Date"];           
+                Date = (string)reader["Date"];           
 
             }
         }
