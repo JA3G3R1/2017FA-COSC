@@ -75,21 +75,22 @@ namespace ClassLibrary
         }
 
         //CW: This method should insert new information into the database for event title,location, and description
-        public List<string> AddEventInfo()
+        public void AddEventData()
         {
+            // Create a working connection to the database.
             SqlConnection connection = new SqlConnection();
             connection.ConnectionString = "Server=cis1.actx.edu;Database=project2;User Id=db2;Password = db20;";
             connection.Open();
 
+            // Create a sql command
             SqlCommand addEventInfo = connection.CreateCommand();
-            addEventInfo.CommandText = "select Location from Event";
-            SqlDataReader reader = addEventInfo.ExecuteReader();
-            List<string> Result = new List<string>();
-            while (reader.Read())
-            {
-                Result.Add((string)reader["Location"]);
-            }
-            return Result;
+            addEventInfo.CommandText = "insert into Event";
+
+            addEventInfo.Parameters.AddWithValue("EventName", Title);
+            addEventInfo.Parameters.AddWithValue("Location", Location);
+            addEventInfo.Parameters.AddWithValue("Description", Description);
+
+            addEventInfo.ExecuteNonQuery();
         }
         //CW: this will ovveride the tostring method for entering in properties
         public EventInfo(string evDescription, string evLocation, string evTitle)
