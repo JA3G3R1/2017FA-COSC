@@ -45,5 +45,10 @@ namespace EventsSchedulerUI
         {
 
         }
+
+        private void EventAdminView_Load(object sender, EventArgs e)
+        {
+            this.dataGridView.Rows.Insert(12 , "");
+        }
     }
 }

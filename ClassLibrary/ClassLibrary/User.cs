@@ -28,9 +28,9 @@ namespace ClassLibrary
             connection.ConnectionString = "Server=cis1.actx.edu;Database=project2;User Id=db2;Password = db20;";
             connection.Open();
 
-            SqlCommand readParticipant = connection.CreateCommand();
-            readParticipant.CommandText = "select FirstName from Participant";
-            SqlDataReader reader = readParticipant.ExecuteReader();
+            SqlCommand readUserFirst = connection.CreateCommand();
+            readUserFirst.CommandText = "select FirstName from Participant";
+            SqlDataReader reader = readUserFirst.ExecuteReader();
             List<string> Result = new List<string>();
             while (reader.Read())
             {
@@ -45,9 +45,9 @@ namespace ClassLibrary
             connection.ConnectionString = "Server=cis1.actx.edu;Database=project2;User Id=db2;Password = db20;";
             connection.Open();
 
-            SqlCommand readParticipant = connection.CreateCommand();
-            readParticipant.CommandText = "select LastName from Participant";
-            SqlDataReader reader = readParticipant.ExecuteReader();
+            SqlCommand readUserLast = connection.CreateCommand();
+            readUserLast.CommandText = "select LastName from Participant";
+            SqlDataReader reader = readUserLast.ExecuteReader();
             List<string> Result = new List<string>();
             while (reader.Read())
             {
@@ -63,9 +63,9 @@ namespace ClassLibrary
             connection.ConnectionString = "Server=cis1.actx.edu;Database=project2;User Id=db2;Password = db20;";
             connection.Open();
 
-            SqlCommand readParticipant = connection.CreateCommand();
-            readParticipant.CommandText = "select * from Participant";
-            SqlDataReader reader = readParticipant.ExecuteReader();
+            SqlCommand readUserName = connection.CreateCommand();
+            readUserName.CommandText = "select * from Participant";
+            SqlDataReader reader = readUserName.ExecuteReader();
             List<string> Result = new List<string>();
             while (reader.Read())
             {

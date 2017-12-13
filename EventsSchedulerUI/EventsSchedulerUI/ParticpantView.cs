@@ -16,7 +16,7 @@ namespace EventsSchedulerUI
     {
         Participant P = new Participant();
         Event E = new Event();
-        EventInfo EI = new EventInfo();
+        EventInfo EI = new EventInfo(" ", " ", " ");
         public ParticpantView()
         {
             InitializeComponent();
