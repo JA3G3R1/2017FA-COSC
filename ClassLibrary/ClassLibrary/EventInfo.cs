@@ -25,9 +25,9 @@ namespace ClassLibrary
             connection.Open();
 
             // Create a sql command
-            SqlCommand readParticipant = connection.CreateCommand();
-            readParticipant.CommandText = "select * from Event";
-            SqlDataReader reader = readParticipant.ExecuteReader();
+            SqlCommand readEventInfo = connection.CreateCommand();
+            readEventInfo.CommandText = "select * from Event";
+            SqlDataReader reader = readEventInfo.ExecuteReader();
 
             // execute the reader
             while (reader.Read())
@@ -45,9 +45,9 @@ namespace ClassLibrary
             connection.ConnectionString = "Server=cis1.actx.edu;Database=project2;User Id=db2;Password = db20;";
             connection.Open();
 
-            SqlCommand readParticipant = connection.CreateCommand();
-            readParticipant.CommandText = "select EventName from Event";
-            SqlDataReader reader = readParticipant.ExecuteReader();
+            SqlCommand readEventTitle = connection.CreateCommand();
+            readEventTitle.CommandText = "select EventName from Event";
+            SqlDataReader reader = readEventTitle.ExecuteReader();
             List<string> Result = new List<string>();
             while (reader.Read())
             {
@@ -63,9 +63,9 @@ namespace ClassLibrary
             connection.ConnectionString = "Server=cis1.actx.edu;Database=project2;User Id=db2;Password = db20;";
             connection.Open();
 
-            SqlCommand readParticipant = connection.CreateCommand();
-            readParticipant.CommandText = "select Location from Event";
-            SqlDataReader reader = readParticipant.ExecuteReader();
+            SqlCommand readEventLocation = connection.CreateCommand();
+            readEventLocation.CommandText = "select Location from Event";
+            SqlDataReader reader = readEventLocation.ExecuteReader();
             List<string> Result = new List<string>();
             while (reader.Read())
             {
@@ -74,6 +74,23 @@ namespace ClassLibrary
             return Result;
         }
 
+        //CW: This method should insert new information into the database for event title,location, and description
+        public List<string> AddEventInfo()
+        {
+            SqlConnection connection = new SqlConnection();
+            connection.ConnectionString = "Server=cis1.actx.edu;Database=project2;User Id=db2;Password = db20;";
+            connection.Open();
+
+            SqlCommand addEventInfo = connection.CreateCommand();
+            addEventInfo.CommandText = "select Location from Event";
+            SqlDataReader reader = addEventInfo.ExecuteReader();
+            List<string> Result = new List<string>();
+            while (reader.Read())
+            {
+                Result.Add((string)reader["Location"]);
+            }
+            return Result;
+        }
         //CW: this will ovveride the tostring method for entering in properties
         public EventInfo(string evDescription, string evLocation, string evTitle)
         {
