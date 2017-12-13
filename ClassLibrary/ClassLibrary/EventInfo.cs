@@ -17,8 +17,7 @@ namespace ClassLibrary
         public string Title { get; set; }
 
         // CW: Set all data from the Event database into the properties
-
-        public void ReadEventData()
+        public void ReadEvenInfotData()
         {
             // Create a working connection to the database.
             SqlConnection connection = new SqlConnection();
@@ -37,6 +36,24 @@ namespace ClassLibrary
                 Location = (string)reader["Location"];
                 Description = (string)reader["Description"];
             }
+        }
+
+        // CW: This method will pull all the event titles for use in the UI
+        public List<string> ReadAllEventTitles()
+        {
+            SqlConnection connection = new SqlConnection();
+            connection.ConnectionString = "Server=cis1.actx.edu;Database=project2;User Id=db2;Password = db20;";
+            connection.Open();
+
+            SqlCommand readParticipant = connection.CreateCommand();
+            readParticipant.CommandText = "select EventName from Event";
+            SqlDataReader reader = readParticipant.ExecuteReader();
+            List<string> Result = new List<string>();
+            while (reader.Read())
+            {
+                Result.Add((string)reader["EventName"]);
+            }
+            return Result;
         }
     }
 }
