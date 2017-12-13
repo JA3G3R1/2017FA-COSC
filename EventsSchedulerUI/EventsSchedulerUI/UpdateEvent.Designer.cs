@@ -83,6 +83,7 @@
             this.cmbEventList.Name = "cmbEventList";
             this.cmbEventList.Size = new System.Drawing.Size(202, 21);
             this.cmbEventList.TabIndex = 4;
+            this.cmbEventList.SelectedIndexChanged += new System.EventHandler(this.cmbEventList_SelectedIndexChanged);
             // 
             // btnEditEvent
             // 

@@ -7,14 +7,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ClassLibrary;
 
 namespace EventsSchedulerUI
 {
     public partial class UpdateEvent : Form
     {
+        //reading all the events 
+        EventInfo EI = new EventInfo();
         public UpdateEvent()
         {
             InitializeComponent();
+            cmbEventList.Items.AddRange(EI.ReadAllEventTitle().ToArray());
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -31,6 +35,11 @@ namespace EventsSchedulerUI
             EventAdminView openinstance = new EventAdminView(); // allows the end user to go back. 
             openinstance.ShowDialog();
             Environment.Exit(0);
+        }
+
+        private void cmbEventList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
