@@ -56,6 +56,23 @@ namespace ClassLibrary
             return Result;
         }
 
+        // Im going to try and create an item that will produce "Firstname, Lastname" for UI
+        public List<string> ReadAllFirstLastNames()
+        {
+            SqlConnection connection = new SqlConnection();
+            connection.ConnectionString = "Server=cis1.actx.edu;Database=project2;User Id=db2;Password = db20;";
+            connection.Open();
+
+            SqlCommand readParticipant = connection.CreateCommand();
+            readParticipant.CommandText = "select * from Participant";
+            SqlDataReader reader = readParticipant.ExecuteReader();
+            List<string> Result = new List<string>();
+            while (reader.Read())
+            {
+                Result.Add((string)reader["FirstName"] + ", " + (string)reader["LastName"]);
+            }
+            return Result;
+        }
         public void ReadData()
         {
             // Create a working connection to the database.
