@@ -27,9 +27,9 @@ namespace ClassLibrary
             connection.Open();
 
             // Create a sql command
-            SqlCommand readParticipant = connection.CreateCommand();
-            readParticipant.CommandText = "select * from Event";
-            SqlDataReader reader = readParticipant.ExecuteReader();
+            SqlCommand readEventData = connection.CreateCommand();
+            readEventData.CommandText = "select * from Event";
+            SqlDataReader reader = readEventData.ExecuteReader();
 
             // execute the reader
             while (reader.Read())
@@ -50,9 +50,9 @@ namespace ClassLibrary
             connection.ConnectionString = "Server=cis1.actx.edu;Database=project2;User Id=db2;Password = db20;";
             connection.Open();
 
-            SqlCommand readParticipant = connection.CreateCommand();
-            readParticipant.CommandText = "select Date from Event";
-            SqlDataReader reader = readParticipant.ExecuteReader();
+            SqlCommand readEventDate = connection.CreateCommand();
+            readEventDate.CommandText = "select Date from Event";
+            SqlDataReader reader = readEventDate.ExecuteReader();
             List<string> Result = new List<string>();
             while (reader.Read())
             {
