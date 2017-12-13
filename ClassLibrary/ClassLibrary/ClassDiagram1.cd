@@ -1,15 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Comment CommentText="CW:&#xD;&#xA;Moved Create, Update, and Delete to admin.&#xD;&#xA;Moved Register to Participant. &#xD;&#xA;Changed 'Place' to Location.">
-    <Position X="7.682" Y="2.146" Height="1.476" Width="1.7" />
+    <Position X="4.651" Y="1.25" Height="1.476" Width="1.7" />
   </Comment>
-  <Class Name="ClassLibrary.Event">
-    <Position X="1.25" Y="2.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAEAAAAAAAAAAAAAAACAAAAAAABAQAAAAAAAAA=</HashCode>
-      <FileName>Event.cs</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="ClassLibrary.EventRegistration">
     <Position X="3" Y="2.25" Width="1.5" />
     <TypeIdentifier>
@@ -20,7 +13,7 @@
   <Class Name="ClassLibrary.EventInfo">
     <Position X="1.25" Y="4.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAgAEAAAAIAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAgAEAAAAIAACAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>EventInfo.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -34,7 +27,7 @@
   <Class Name="ClassLibrary.User">
     <Position X="6.5" Y="1.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAEAAAAABgAAAAEAAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <HashCode>AAAAQEAAAAABgAAAEEAAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
       <FileName>User.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -48,8 +41,15 @@
   <Class Name="ClassLibrary.Participant">
     <Position X="7.5" Y="4.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAGAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAACAAAAAAAAA=</HashCode>
       <FileName>Participant.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassLibrary.Event">
+    <Position X="1.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAAAAAACAAAAAAABAQAAAAAAAAA=</HashCode>
+      <FileName>Event.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

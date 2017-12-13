@@ -18,18 +18,19 @@ namespace ClassLibrary
 
         public int Date { get; set; }
 
-        ReadAllEvents()
-        {
+        //ReadAllEvents()
+        //{
 
-        }
-        ReadAllEventsWithCategories()
-        {
-            // Select * from Event (as) e, Catagory (as) c where c.CategoryID = e.CategoryID
-            
-        }
-        ReadAllCategories()
-        {
+        //}
+        //ReadAllEventsWithCategories()
+        //{
+        //    Select* from Event(as) e, Catagory(as) c where c.CategoryID = e.CategoryID
 
-        }
+
+        //}
+        //ReadAllCategories()
+        //{
+
+        //}
     }
 }
