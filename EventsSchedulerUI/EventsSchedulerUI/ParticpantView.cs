@@ -15,11 +15,14 @@ namespace EventsSchedulerUI
     public partial class ParticpantView : Form
     {
         Participant P = new Participant();
+        Event E = new Event();
+        EventInfo EI = new EventInfo();
         public ParticpantView()
         {
             InitializeComponent();
             P.ReadData();
             cmb2.Items.AddRange(P.ReadAllFirstLastNames().ToArray());
+            comboBox1.Items.AddRange(EI.ReadAllEventTitle().ToArray());
 
         }
 
