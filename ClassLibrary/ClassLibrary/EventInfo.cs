@@ -73,5 +73,14 @@ namespace ClassLibrary
             }
             return Result;
         }
+
+        //CW: this will ovveride the tostring method for entering in properties
+        public EventInfo(string evDescription, string evLocation, string evTitle)
+        {
+            Description = evDescription;
+            Location = evLocation;
+            Title = evTitle;
+        }
+
     }
 }

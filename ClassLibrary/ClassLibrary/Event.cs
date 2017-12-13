@@ -60,19 +60,7 @@ namespace ClassLibrary
             }
             return Result;
         }
-        //ReadAllEvents()
-        //{
 
-        //}
-        //ReadAllEventsWithCategories()
-        //{
-        //    Select* from Event(as) e, Catagory(as) c where c.CategoryID = e.CategoryID
-
-
-        //}
-        //ReadAllCategories()
-        //{
-
-        //}
+        //CW: The goal of this method is to convert the input to a string
     }
 }
