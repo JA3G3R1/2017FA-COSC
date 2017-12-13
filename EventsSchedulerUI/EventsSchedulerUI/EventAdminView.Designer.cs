@@ -31,7 +31,6 @@
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.tbView = new System.Windows.Forms.TabControl();
             this.tbList = new System.Windows.Forms.TabPage();
-            this.dataGridView = new System.Windows.Forms.DataGridView();
             this.tbTeaser = new System.Windows.Forms.TabPage();
             this.dataGridView8 = new System.Windows.Forms.DataGridView();
             this.dataGridView7 = new System.Windows.Forms.DataGridView();
@@ -44,16 +43,16 @@
             this.btnUpdateEvent = new System.Windows.Forms.Button();
             this.btnDeleteEvent = new System.Windows.Forms.Button();
             this.btnRegisterRequest = new System.Windows.Forms.Button();
-            this.Sunday = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Monday = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Tuesday = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Wednesday = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Thursday = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Friday = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Saturday = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Friday = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Thursday = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Wednesday = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Tuesday = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Monday = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Sunday = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridView = new System.Windows.Forms.DataGridView();
             this.tbView.SuspendLayout();
             this.tbList.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.tbTeaser.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).BeginInit();
@@ -62,6 +61,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // monthCalendar1
@@ -92,24 +92,6 @@
             this.tbList.TabIndex = 0;
             this.tbList.Text = "List View";
             this.tbList.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView
-            // 
-            this.dataGridView.AllowUserToAddRows = false;
-            this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Sunday,
-            this.Monday,
-            this.Tuesday,
-            this.Wednesday,
-            this.Thursday,
-            this.Friday,
-            this.Saturday});
-            this.dataGridView.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView.Name = "dataGridView";
-            this.dataGridView.Size = new System.Drawing.Size(747, 398);
-            this.dataGridView.TabIndex = 0;
-            this.dataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellContentClick);
             // 
             // tbTeaser
             // 
@@ -227,46 +209,64 @@
             this.btnRegisterRequest.Text = "Registrar";
             this.btnRegisterRequest.UseVisualStyleBackColor = true;
             // 
-            // Sunday
+            // Saturday
             // 
-            this.Sunday.HeaderText = "Sun";
-            this.Sunday.Name = "Sunday";
-            // 
-            // Monday
-            // 
-            this.Monday.HeaderText = "Mon";
-            this.Monday.Name = "Monday";
-            // 
-            // Tuesday
-            // 
-            this.Tuesday.HeaderText = "Tues";
-            this.Tuesday.Name = "Tuesday";
-            // 
-            // Wednesday
-            // 
-            this.Wednesday.HeaderText = "Wed";
-            this.Wednesday.Name = "Wednesday";
-            // 
-            // Thursday
-            // 
-            this.Thursday.HeaderText = "Thur";
-            this.Thursday.Name = "Thursday";
+            this.Saturday.HeaderText = "Sat";
+            this.Saturday.Name = "Saturday";
             // 
             // Friday
             // 
             this.Friday.HeaderText = "Fri";
             this.Friday.Name = "Friday";
             // 
-            // Saturday
+            // Thursday
             // 
-            this.Saturday.HeaderText = "Sat";
-            this.Saturday.Name = "Saturday";
+            this.Thursday.HeaderText = "Thur";
+            this.Thursday.Name = "Thursday";
+            // 
+            // Wednesday
+            // 
+            this.Wednesday.HeaderText = "Wed";
+            this.Wednesday.Name = "Wednesday";
+            // 
+            // Tuesday
+            // 
+            this.Tuesday.HeaderText = "Tues";
+            this.Tuesday.Name = "Tuesday";
+            // 
+            // Monday
+            // 
+            this.Monday.HeaderText = "Mon";
+            this.Monday.Name = "Monday";
+            // 
+            // Sunday
+            // 
+            this.Sunday.HeaderText = "Sun";
+            this.Sunday.Name = "Sunday";
+            // 
+            // dataGridView
+            // 
+            this.dataGridView.AllowUserToAddRows = false;
+            this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Sunday,
+            this.Monday,
+            this.Tuesday,
+            this.Wednesday,
+            this.Thursday,
+            this.Friday,
+            this.Saturday});
+            this.dataGridView.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView.Name = "dataGridView";
+            this.dataGridView.Size = new System.Drawing.Size(749, 398);
+            this.dataGridView.TabIndex = 0;
+            this.dataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellContentClick);
             // 
             // EventAdminView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1007, 462);
+            this.ClientSize = new System.Drawing.Size(1025, 462);
             this.Controls.Add(this.btnRegisterRequest);
             this.Controls.Add(this.btnDeleteEvent);
             this.Controls.Add(this.btnUpdateEvent);
@@ -278,7 +278,6 @@
             this.Load += new System.EventHandler(this.EventAdminView_Load);
             this.tbView.ResumeLayout(false);
             this.tbList.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             this.tbTeaser.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).EndInit();
@@ -287,6 +286,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             this.ResumeLayout(false);
 
         }
