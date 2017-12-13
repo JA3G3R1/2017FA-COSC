@@ -16,7 +16,7 @@ namespace ClassLibrary
 
         public string Title { get; set; }
 
-        // Set all data from the Event database into the properties
+        // CW: Set all data from the Event database into the properties
 
         public void ReadEventData()
         {
