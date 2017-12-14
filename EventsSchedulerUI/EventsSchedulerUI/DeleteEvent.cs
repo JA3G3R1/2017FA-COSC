@@ -16,14 +16,16 @@ namespace EventsSchedulerUI
         EventInfo EI = new EventInfo(" ", " ", " ");
         public DeleteEvent()
         {
+            EI.ReadEvenInfotData();
             InitializeComponent();
             comboBox1.Items.AddRange(EI.ReadAllEventTitle().ToArray());
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            EI.DeleteEventData();
-            
+            comboBox1.SelectedItem.Equals(EI.EventID);
+            comboBox1.SelectedItem.Equals(EI.Title);
+            EI.DeleteEventData();            
         }
 
         private void button2_Click(object sender, EventArgs e)
