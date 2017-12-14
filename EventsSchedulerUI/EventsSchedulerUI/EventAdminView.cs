@@ -47,6 +47,7 @@ namespace EventsSchedulerUI
         }
         
         private void EventAdminView_Load(object sender, EventArgs e)
+                                       // Sun, Mon, Tues, Wed, Thur, Fri, Sat
         {
             string[] row1 = new string[] { "", "", "", "", "", "See The New Star Wars", "" }; // 12 AM
             dataGridView.Rows.Add(row1);
@@ -72,10 +73,10 @@ namespace EventsSchedulerUI
             string[] row8 = new string[] { "", "", "", "", "", "", "" }; // 7 AM
             dataGridView.Rows.Add(row8);
 
-            string[] row9 = new string[] { "", "", "", "", "", "", "" }; // 8 AM
+            string[] row9 = new string[] { "", "Biology", "", "Biology", "", "", "" }; // 8 AM
             dataGridView.Rows.Add(row9);
 
-            string[] row10 = new string[] { "", "", "", "", "", "", "" }; // 9 AM
+            string[] row10 = new string[] { "", "Biology", "", "Biology", "", "", "" }; // 9 AM
             dataGridView.Rows.Add(row10);
 
             string[] row11 = new string[] { "", "", "", "", "", "", "" }; // 10 AM
@@ -84,16 +85,16 @@ namespace EventsSchedulerUI
             string[] row12 = new string[] { "", "", "", "", "", "", "" }; // 11 AM
             dataGridView.Rows.Add(row12);
 
-            string[] row13 = new string[] { "", "", "", "", "", "", "" }; // 12 PM
+            string[] row13 = new string[] { "Cry As I Watch The Dallas Cowboys Lose", "", "Go To C Programming Even Though It's C#", "", "Go To C Programming Even Though It's C#", "", "" }; // 12 PM
             dataGridView.Rows.Add(row13);
 
-            string[] row14 = new string[] { "", "", "", "", "", "", "" }; // 1 PM
+            string[] row14 = new string[] { "Cry As I Watch The Dallas Cowboys Lose", "", "Go To C Programming Even Though It's C#", "", "Go To C Programming Even Though It's C#", "", "" }; // 1 PM
             dataGridView.Rows.Add(row14);
 
-            string[] row15 = new string[] { "", "", "", "", "", "", "" }; // 2 PM
+            string[] row15 = new string[] { "Cry As I Watch The Dallas Cowboys Lose", "", "Go To C Programming Even Though It's C#", "", "Go To C Programming Even Though It's C#", "", "" }; // 2 PM
             dataGridView.Rows.Add(row15);
 
-            string[] row16 = new string[] { "", "", "", "", "", "", "" }; // 3 PM
+            string[] row16 = new string[] { "Cry As I Watch The Dallas Cowboys Lose", "", "", "", "", "", "" }; // 3 PM
             dataGridView.Rows.Add(row16);
 
             string[] row17 = new string[] { "", "", "", "", "", "", "" }; // 4 PM
@@ -105,7 +106,7 @@ namespace EventsSchedulerUI
             string[] row19 = new string[] { "", "", "", "", "", "", "" }; // 6 PM
             dataGridView.Rows.Add(row19);
 
-            string[] row20 = new string[] { "", "", "", "", "", "", "" }; // 7 PM
+            string[] row20 = new string[] { "", "", "", "", "", "", "Annual Meeting For World Domination" }; // 7 PM
             dataGridView.Rows.Add(row20);
 
             string[] row21 = new string[] { "", "", "", "", "", "", "" }; // 8 PM
