@@ -8,10 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using ClassLibrary;
+
 namespace EventsSchedulerUI
 {
     public partial class DeleteConfirmBox : Form
     {
+        EventInfo EI = new EventInfo(" ", " ", " ");
         public DeleteConfirmBox()
         {
             InitializeComponent();
@@ -23,6 +26,11 @@ namespace EventsSchedulerUI
             DeleteEvent openInstance = new DeleteEvent();
             openInstance.ShowDialog();
             Environment.Exit(0);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

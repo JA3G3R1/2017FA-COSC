@@ -93,6 +93,20 @@ namespace ClassLibrary
 
             addEventInfo.ExecuteNonQuery();
         }
+
+        //CW: This method should remove information in the database
+        public void DeleteEventData()
+        {
+            SqlConnection connection = new SqlConnection();
+            connection.ConnectionString = "Server=cis1.actx.edu;Database=project2;User Id=db2;Password = db20;";
+            connection.Open();
+
+            // Create a sql command
+            SqlCommand addEventInfo = connection.CreateCommand();
+            addEventInfo.CommandText = "delete from Event(EventName, Location, Description) values ('" + Title + "', '" + Location + "', '" + Description + "')";
+
+            addEventInfo.ExecuteNonQuery();
+        }
         //CW: this will ovveride the tostring method for entering in properties
         public EventInfo(string evDescription, string evLocation, string evTitle)
         {
