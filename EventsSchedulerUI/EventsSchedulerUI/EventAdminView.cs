@@ -48,7 +48,7 @@ namespace EventsSchedulerUI
         
         private void EventAdminView_Load(object sender, EventArgs e)
         {
-            string[] row1 = new string[] { "day 1 plans", "day 2 plans", "day 3 plans", "day 4 plans", "day 5 plans", "day 6 plans", "day 7 plans" };
+            string[] row1 = new string[] { "", "", "", "Taking Dog To The Vet", "", "See The New Star Wars", "" };
             dataGridView.Rows.Add(row1);
 
             string[] row2 = new string[] { "day 8 plans", "day 9 plans", "day 10 plans", "day 11 plans", "day 12 plans", "day 13 plans", "day 14 plans" };
