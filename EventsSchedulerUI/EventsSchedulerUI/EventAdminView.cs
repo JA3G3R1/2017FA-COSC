@@ -45,7 +45,7 @@ namespace EventsSchedulerUI
         {
 
         }
-        // Justin git upload test.
+        
         private void EventAdminView_Load(object sender, EventArgs e)
         {
             string[] row1 = new string[] { "day 1 plans", "day 2 plans", "day 3 plans", "day 4 plans", "day 5 plans", "day 6 plans", "day 7 plans" };
