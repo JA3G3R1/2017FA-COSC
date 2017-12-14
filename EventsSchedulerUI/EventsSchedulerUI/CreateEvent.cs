@@ -18,7 +18,6 @@ namespace EventsSchedulerUI
         public CreateEvent()
         {
             InitializeComponent();
-            EI.Title = textBox3.Text;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -27,6 +26,14 @@ namespace EventsSchedulerUI
             EventAdminView openinstance = new EventAdminView();
             openinstance.ShowDialog();
             Environment.Exit(0);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            EI.Title = textBox3.Text;
+            EI.Location = textBox2.Text;
+            EI.Description = textBox1.Text;
+            EI.AddEventData();
         }
     }
 }

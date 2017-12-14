@@ -84,11 +84,12 @@ namespace ClassLibrary
 
             // Create a sql command
             SqlCommand addEventInfo = connection.CreateCommand();
-            addEventInfo.CommandText = "insert into Event";
-
-            addEventInfo.Parameters.AddWithValue("EventName", Title);
-            addEventInfo.Parameters.AddWithValue("Location", Location);
-            addEventInfo.Parameters.AddWithValue("Description", Description);
+            addEventInfo.CommandText = "insert into Event(EventName, Location, Description) values ('" + Title + "', '" + Location + "', '" + Description + "')";
+            //INSERT INTO table_name(column1, column2, column3, ...)
+            //VALUES(value1, value2, value3, ...);
+            //addEventInfo.Parameters.AddWithValue("EventName", Title);
+            //addEventInfo.Parameters.AddWithValue("Location", Location);
+            //addEventInfo.Parameters.AddWithValue("Description", Description);
 
             addEventInfo.ExecuteNonQuery();
         }

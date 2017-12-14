@@ -35,6 +35,7 @@ namespace EventsSchedulerUI
         {
             this.Hide();
             AdminAuthenticator openInstance = new AdminAuthenticator();
+            openInstance.ShowDialog();
             Environment.Exit(0);
         }
     }
