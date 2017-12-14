@@ -36,6 +36,10 @@ namespace EventsSchedulerUI
             EI.Description = textBox1.Text;
             EI.Capacity = Convert.ToInt32(this.txtCapacity.Text);
             EI.AddEventData();
+            this.Hide();
+            EventAdminView openinstance = new EventAdminView();
+            openinstance.ShowDialog();
+            Environment.Exit(0);
         }
 
         private void txtCapacity_TextChanged(object sender, EventArgs e)
