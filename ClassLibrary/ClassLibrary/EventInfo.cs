@@ -16,6 +16,8 @@ namespace ClassLibrary
 
         public string Title { get; set; }
 
+        public int EventID { get; set; }
+
         // CW: Set all data from the Event database into the properties
         public void ReadEvenInfotData()
         {
@@ -32,6 +34,7 @@ namespace ClassLibrary
             // execute the reader
             while (reader.Read())
             {
+                EventID = (Int32)reader["EventID"];
                 Title = (string)reader["EventName"];
                 Location = (string)reader["Location"];
                 Description = (string)reader["Description"];
@@ -103,7 +106,7 @@ namespace ClassLibrary
 
             // Create a sql command
             SqlCommand addEventInfo = connection.CreateCommand();
-            addEventInfo.CommandText = "delete from Event(EventName, Location, Description) values ('" + Title + "', '" + Location + "', '" + Description + "')";
+            addEventInfo.CommandText = "delete from Event where EventID = '" + EventID + "';";
 
             addEventInfo.ExecuteNonQuery();
         }

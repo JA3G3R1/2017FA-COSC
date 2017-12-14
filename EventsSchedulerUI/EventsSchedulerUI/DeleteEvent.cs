@@ -22,10 +22,8 @@ namespace EventsSchedulerUI
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            DeleteConfirmBox openInstance = new DeleteConfirmBox();
-            openInstance.ShowDialog();
-            Environment.Exit(0);
+            EI.DeleteEventData();
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
