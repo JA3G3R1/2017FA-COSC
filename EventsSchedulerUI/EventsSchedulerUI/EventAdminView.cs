@@ -48,76 +48,76 @@ namespace EventsSchedulerUI
         
         private void EventAdminView_Load(object sender, EventArgs e)
         {
-            string[] row1 = new string[] { "", "", "", "", "", "See The New Star Wars", "" };
+            string[] row1 = new string[] { "", "", "", "", "", "See The New Star Wars", "" }; // 12 AM
             dataGridView.Rows.Add(row1);
 
-            string[] row2 = new string[] { "", "", "", "", "", "", "" };
+            string[] row2 = new string[] { "", "", "", "", "", "", "" }; // 1 AM
             dataGridView.Rows.Add(row2);
 
-            string[] row3 = new string[] { "", "", "", "", "", "", "" };
+            string[] row3 = new string[] { "", "", "", "", "", "", "" }; // 2 AM
             dataGridView.Rows.Add(row3);
 
-            string[] row4 = new string[] { "", "", "", "", "", "", "" };
+            string[] row4 = new string[] { "", "", "", "", "", "", "" }; // 3 AM
             dataGridView.Rows.Add(row4);
 
-            string[] row5 = new string[] { "", "", "", "", "", "", "" };
+            string[] row5 = new string[] { "", "", "", "", "", "", "" }; // 4 AM
             dataGridView.Rows.Add(row5);
 
-            string[] row6 = new string[] { "", "", "", "", "", "", "" };
+            string[] row6 = new string[] { "", "", "", "", "", "", "" }; // 5 AM
             dataGridView.Rows.Add(row6);
 
-            string[] row7 = new string[] { "", "", "", "", "", "", "" };
+            string[] row7 = new string[] { "", "", "", "", "", "", "" }; // 6 AM
             dataGridView.Rows.Add(row7);
 
-            string[] row8 = new string[] { "", "", "", "", "", "", "" };
+            string[] row8 = new string[] { "", "", "", "", "", "", "" }; // 7 AM
             dataGridView.Rows.Add(row8);
 
-            string[] row9 = new string[] { "", "", "", "", "", "", "" };
+            string[] row9 = new string[] { "", "", "", "", "", "", "" }; // 8 AM
             dataGridView.Rows.Add(row9);
 
-            string[] row10 = new string[] { "", "", "", "", "", "", "" };
+            string[] row10 = new string[] { "", "", "", "", "", "", "" }; // 9 AM
             dataGridView.Rows.Add(row10);
 
-            string[] row11 = new string[] { "", "", "", "", "", "", "" };
+            string[] row11 = new string[] { "", "", "", "", "", "", "" }; // 10 AM
             dataGridView.Rows.Add(row11);
 
-            string[] row12 = new string[] { "", "", "", "", "", "", "" };
+            string[] row12 = new string[] { "", "", "", "", "", "", "" }; // 11 AM
             dataGridView.Rows.Add(row12);
 
-            string[] row13 = new string[] { "", "", "", "", "", "", "" };
+            string[] row13 = new string[] { "", "", "", "", "", "", "" }; // 12 PM
             dataGridView.Rows.Add(row13);
 
-            string[] row14 = new string[] { "", "", "", "", "", "", "" };
+            string[] row14 = new string[] { "", "", "", "", "", "", "" }; // 1 PM
             dataGridView.Rows.Add(row14);
 
-            string[] row15 = new string[] { "", "", "", "", "", "", "" };
+            string[] row15 = new string[] { "", "", "", "", "", "", "" }; // 2 PM
             dataGridView.Rows.Add(row15);
 
-            string[] row16 = new string[] { "", "", "", "", "", "", "" };
+            string[] row16 = new string[] { "", "", "", "", "", "", "" }; // 3 PM
             dataGridView.Rows.Add(row16);
 
-            string[] row17 = new string[] { "", "", "", "", "", "", "" };
+            string[] row17 = new string[] { "", "", "", "", "", "", "" }; // 4 PM
             dataGridView.Rows.Add(row17);
 
-            string[] row18 = new string[] { "", "", "", "", "", "", "" };
+            string[] row18 = new string[] { "", "", "", "", "", "", "" }; // 5 PM
             dataGridView.Rows.Add(row18);
 
-            string[] row19 = new string[] { "", "", "", "", "", "", "" };
+            string[] row19 = new string[] { "", "", "", "", "", "", "" }; // 6 PM
             dataGridView.Rows.Add(row19);
 
-            string[] row20 = new string[] { "", "", "", "", "", "", "" };
+            string[] row20 = new string[] { "", "", "", "", "", "", "" }; // 7 PM
             dataGridView.Rows.Add(row20);
 
-            string[] row21 = new string[] { "", "", "", "", "", "", "" };
+            string[] row21 = new string[] { "", "", "", "", "", "", "" }; // 8 PM
             dataGridView.Rows.Add(row21);
 
-            string[] row22 = new string[] { "", "", "", "", "", "", "" };
+            string[] row22 = new string[] { "", "", "", "", "", "", "" }; // 9 PM
             dataGridView.Rows.Add(row22);
 
-            string[] row23 = new string[] { "", "", "", "", "", "", "" };
+            string[] row23 = new string[] { "", "", "", "", "", "", "" }; // 10 PM
             dataGridView.Rows.Add(row23);
 
-            string[] row24 = new string[] { "", "", "", "", "", "", "" };
+            string[] row24 = new string[] { "", "", "", "", "", "", "" }; // 11 PM
             dataGridView.Rows.Add(row24);
 
 
