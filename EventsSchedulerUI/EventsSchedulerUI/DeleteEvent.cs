@@ -25,7 +25,11 @@ namespace EventsSchedulerUI
         {
             comboBox1.SelectedItem.Equals(EI.EventID);
             comboBox1.SelectedItem.Equals(EI.Title);
-            EI.DeleteEventData();            
+            EI.DeleteEventData();
+            this.Hide();
+            EventAdminView openInstance = new EventAdminView();
+            openInstance.ShowDialog();
+            Environment.Exit(0);
         }
 
         private void button2_Click(object sender, EventArgs e)

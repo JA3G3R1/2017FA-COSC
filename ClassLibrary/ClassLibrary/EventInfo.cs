@@ -18,6 +18,8 @@ namespace ClassLibrary
 
         public int EventID { get; set; }
 
+        public int Capacity { get; set; }
+
         // CW: Set all data from the Event database into the properties
         public void ReadEvenInfotData()
         {
@@ -87,7 +89,7 @@ namespace ClassLibrary
 
             // Create a sql command
             SqlCommand addEventInfo = connection.CreateCommand();
-            addEventInfo.CommandText = "insert into Event(EventName, Location, Description) values ('" + Title + "', '" + Location + "', '" + Description + "')";
+            addEventInfo.CommandText = "insert into Event(EventName, Location, Description, Capacity) values ('" + Title + "', '" + Location + "', '" + Description + "','" + Capacity + "')";
             //INSERT INTO table_name(column1, column2, column3, ...)
             //VALUES(value1, value2, value3, ...);
             //addEventInfo.Parameters.AddWithValue("EventName", Title);

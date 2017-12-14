@@ -10,7 +10,6 @@ namespace ClassLibrary
 {
     public class Event
     {
-        public int Capacity { get; set; }
 
         public bool Status { get; set; }
 
@@ -34,7 +33,7 @@ namespace ClassLibrary
             // execute the reader
             while (reader.Read())
             {
-                Capacity = (Int32)reader["Capacity"];
+                //Capacity = (Int32)reader["Capacity"];
                 Status = (Boolean)reader["Status"];
                 Type = (string)reader["Category"];
                 Date = (string)reader["Date"];           
@@ -42,7 +41,25 @@ namespace ClassLibrary
             }
         }
 
+        // CW: This will add to the database
+        //public void AddEventData1()
+        //{
+        //    // Create a working connection to the database.
+        //    SqlConnection connection = new SqlConnection();
+        //    connection.ConnectionString = "Server=cis1.actx.edu;Database=project2;User Id=db2;Password = db20;";
+        //    connection.Open();
 
+        //    // Create a sql command
+        //    SqlCommand addEventInfo = connection.CreateCommand();
+        //    addEventInfo.CommandText = "insert into Event(Capacity) values ('" + Capacity + "')";
+        //    //INSERT INTO table_name(column1, column2, column3, ...)
+        //    //VALUES(value1, value2, value3, ...);
+        //    //addEventInfo.Parameters.AddWithValue("EventName", Title);
+        //    //addEventInfo.Parameters.AddWithValue("Location", Location);
+        //    //addEventInfo.Parameters.AddWithValue("Description", Description);
+
+        //    addEventInfo.ExecuteNonQuery();
+        //}
         //CW: this will pull all dates for use in UI
         public List<string> ReadEventDate()
         {

@@ -15,6 +15,7 @@ namespace EventsSchedulerUI
     public partial class CreateEvent : Form
     {
         EventInfo EI = new EventInfo(" "," "," ");
+        Event E = new Event();
         public CreateEvent()
         {
             InitializeComponent();
@@ -33,7 +34,12 @@ namespace EventsSchedulerUI
             EI.Title = textBox3.Text;
             EI.Location = textBox2.Text;
             EI.Description = textBox1.Text;
+            EI.Capacity = Convert.ToInt32(this.txtCapacity.Text);
             EI.AddEventData();
+        }
+
+        private void txtCapacity_TextChanged(object sender, EventArgs e)
+        {
         }
     }
 }
